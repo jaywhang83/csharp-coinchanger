@@ -48,3 +48,13 @@ namespace ChangeTest
     }
   }
 }
+
+
+/******************************************************************
+  when using Split you have to use single ' ' to turn the
+string into a array of string.
+string word = "hi how are you";
+ex: string[] arr = word.Split(' '); works!!!
+ex: string[] arr = word.Split(" "); DOES NOT WORK!! Returns char[]
+
+******************************************************************/
