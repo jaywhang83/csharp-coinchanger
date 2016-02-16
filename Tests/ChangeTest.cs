@@ -1,9 +1,9 @@
 using Xunit;
 using System.Collections.Generic;
 using System;
-namespace Change
+namespace ChangeTest
 {
-  public class ChangeTest
+  public class ChangeTester
   {
     [Fact]
     public void CoinChanger_ForPenny()

@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Change
+namespace ChangeTest
 {
   public class Change
   {
@@ -15,6 +15,7 @@ namespace Change
 
       int n = 0;
       int remainderN = 0;
+
       if(coins >= 25)
       {
         q = coins / 25;
@@ -36,15 +37,14 @@ namespace Change
       if(coins > 5)
       {
         n =  coins / 5;
-         remainderN = coins % 5;
-
-      return n + " nickel " + remainderN + " penny";
+        remainderN = coins % 5;
+        return n + " nickel " + remainderN + " penny";
       }
       if(coins < 5)
       {
         return coins + " pennies";
       }
-      return "wrong change";
+      return "invalid amount";
     }
   }
 }
